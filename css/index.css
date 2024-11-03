@@ -1,0 +1,275 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+    background-image: url("../img/20241103_163341.jpg");
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none; /* Remove underlines from links */
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+/*### navigation-bar ###*/
+#navigation-bar {
+    width: 100%;
+    height: 35px;
+    background-color: darkblue;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#AI-logo {
+    width: auto;
+}
+@keyframes AI {
+    0% { transform: perspective(900px) rotateY(0deg); }
+    100% { transform: perspective(900px) rotateY(360deg); }
+}
+.AI-Logo-1 {
+    width: 5%;
+    font-size: 10px;
+    margin-left: 15%;
+    margin-top: 1%;
+    color: white;
+
+    animation-name: AI;
+    animation-duration: 10s;
+    transform-style: preserve-3d;
+    animation: AI 5s linear infinite;
+}
+
+#nav-box {
+    width: 80%;
+}
+nav {
+    margin-left: 33%;
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+nav ul {
+    position: fixed;
+    top: 0;
+    margin-top: 1%;
+    list-style-type: none;
+}
+nav li {
+    display: inline;
+    margin-left: 5px;
+}
+nav a {
+    text-decoration: none;
+    color: yellow;
+    font-size: larger;
+}
+
+#color-nav-link {
+    color: aqua;
+}
+
+
+/*### main-container ###*/
+#text-box-top {
+    margin: 11% 1% 1% 1%;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0.8);
+}
+#text-box {
+    margin: 1%;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0, 0.8);
+}
+#text {
+    margin: 1%;
+    text-align: center;
+    padding: 5% 1%;
+}
+#text h1 {
+    color: white;
+    text-align: center;
+    font-size: larger;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    justify-content: flex-start;
+    word-spacing: normal;
+    padding: 2%;
+}
+#text a {
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    justify-content: flex-start;
+    word-spacing: normal;
+    padding: 3%;
+}
+#text p {
+    color: white;
+    font-size: medium;
+}
+.description {
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.5;
+    justify-content: flex-start; /* Align items to the start */
+    word-spacing: normal;
+    padding: 3% 2%;
+}
+h2 {
+    color: white;
+    font-size: large;
+    padding: 3% 0;
+}
+h3 {
+    color: white;
+    padding: 2%;
+}
+
+
+/*### 2d-3d ###*/
+#rotate-AI {
+    background-color: rgb(0, 0, 0, 0.8);
+    margin: 1%;
+    border-radius: 10px;
+    display: flex;
+}
+@keyframes AI {
+    0% { transform: perspective(900px) rotateY(0deg); }
+    100% { transform: perspective(900px) rotateY(360deg); }
+}
+.AI-1 {
+    margin: auto;
+    padding: 4%;
+    text-align: center;
+    font-size: 35px;
+    width: 40%;
+    color: white;
+    animation-name: AI;
+    animation-duration: 10s;
+
+    transform-style: preserve-3d;
+    animation: AI 5s linear infinite;
+}
+
+
+/*### Atom-animation ###*/
+#atom-box {
+    margin: 1%;
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    background-color: rgb(0, 0, 0, 0.8);
+    perspective: 800px;
+    border-radius: 10px;
+}
+.atom {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+.nucleus {
+    width: 20px;
+    height: 20px;
+    background-color: #ffcc00;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    border: 2px dashed #fff;
+}
+.orbit-1 {
+    width: 75px;
+    height: 75px;
+    animation: rotate 4s linear infinite;
+}
+.orbit-2 {
+    width: 100px;
+    height: 100px;
+    animation: rotate 3s linear infinite;
+    transform: rotateX(30deg);
+}
+.orbit-3 {
+    width: 125px;
+    height: 125px;
+    animation: rotate 2s linear infinite;
+    transform: rotateX(30deg);
+}
+.orbit-4 {
+    width: 150px;
+    height: 150px;
+    animation: rotate 1.5s linear infinite;
+    transform: rotateX(-30deg) rotateY(-30deg);
+}
+.electron {
+    width: 10px;
+    height: 10px;
+    background-color: #00ccff;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@keyframes rotate {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+
+/*### footer ###*/
+footer {
+    display: flex;
+    margin: 1%;
+    background-color: rgb(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: smaller;
+    justify-content: center;
+}
