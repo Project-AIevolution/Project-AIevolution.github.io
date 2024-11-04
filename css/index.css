@@ -27,7 +27,7 @@ img {
 }
 
 a {
-    text-decoration: none; /* Remove underlines from links */
+    text-decoration: none;
 }
 
 button {
@@ -40,13 +40,12 @@ button {
 /*### navigation-bar ###*/
 #navigation-bar {
     width: 100%;
-    height: 35px;
+    height: 40px;
     background-color: darkblue;
     position: fixed;
-    top: 0;
+    top: 0.5%;
     margin: 0;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 10px;
 }
 
 #AI-logo {
@@ -62,7 +61,7 @@ button {
     margin-left: 15%;
     margin-top: 1%;
     color: white;
-
+    margin-top: 2%;
     animation-name: AI;
     animation-duration: 10s;
     transform-style: preserve-3d;
@@ -81,7 +80,7 @@ nav {
 nav ul {
     position: fixed;
     top: 0;
-    margin-top: 1%;
+    margin-top: 3%;
     list-style-type: none;
 }
 nav li {
@@ -101,8 +100,8 @@ nav a {
 
 /*### main-container ###*/
 #text-box-top {
-    margin: 11% 1% 1% 1%;
-    border-radius: 10px;
+    margin: 15% 1% 1% 1%;
+    border-radius: 8px;
     background-color: rgb(0, 0, 0, 0.8);
 }
 #text-box {
@@ -159,7 +158,7 @@ h3 {
 }
 
 
-/*### 2d-3d ###*/
+/*### 3D-AI ###*/
 #rotate-AI {
     background-color: rgb(0, 0, 0, 0.8);
     margin: 1%;
@@ -185,7 +184,7 @@ h3 {
 }
 
 
-/*### Atom-animation ###*/
+/*### animation ###*/
 #atom-box {
     margin: 1%;
     padding: 10%;
@@ -269,7 +268,7 @@ footer {
     background-color: rgb(0, 0, 0, 0.7);
     color: white;
     border-radius: 10px;
-    padding: 10px;
+    padding: 6% 1%;
     font-size: smaller;
     justify-content: center;
 }
