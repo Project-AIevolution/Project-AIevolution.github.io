@@ -92,10 +92,6 @@ nav a {
     color: yellow;
     font-size: larger;
 }
-#visible {
-    display: inline;
-    visibility: visible;
-}
 
 #color-nav-link {
     color: aqua;
