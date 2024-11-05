@@ -95,7 +95,6 @@ nav a {
 #visible {
     display: inline;
     visibility: visible;
-    box-sizing: border-box;
 }
 
 #color-nav-link {
