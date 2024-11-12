@@ -1,20 +1,60 @@
-/*### navigation-bar ###*/
-@media only screen and (min-width: 720px) {
-    .AI-Logo-1 {
-        margin-top: 2.7vh;
-        margin-left: 35%;
-        width: 0;
-    }
-    nav {
-        margin-left: 50%;
-    }
-    nav ul {
-        margin-top: 1.4%;
-    }
-    nav li {
-        margin-left: 25px;
+/*### navigation-bar1 ###*/
+@media only screen and (min-width: 360px) {
+    .container {
+        justify-content: center;
+        margin: 0 auto;
     }
 }
+@media only screen and (min-width: 361px) and (max-width: 600px) {
+    .container {
+        justify-content: center;
+        margin: 0 auto;
+    }
+    nav ul {
+        margin-left: 15px;
+    }
+    #text-box-top {
+        margin: 12% 1% 1% 1%;
+        border-radius: 8px;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .container {
+        justify-content: center;
+        margin: 0 auto;
+    }
+    nav ul {
+        margin-left: 15px;
+    }
+    #text-box-top {
+        margin: 14% 1% 1% 1%;
+        border-radius: 8px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        justify-content: center;
+        margin: 0 auto;
+        box-shadow: 0 4px 10px rgba(37, 177, 182, 0.2);
+    }
+    nav ul {
+        margin-left: 15px;
+    }
+}
+/*
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    body {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 24px;
+    }
+}*/
+
 
 /*### main-container ###*/
 @media only screen and (min-width: 720px) {

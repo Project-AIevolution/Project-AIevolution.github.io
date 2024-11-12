@@ -2,17 +2,18 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;/*for the nav1*/
 }
 
 html, body {
     height: 100%;
 }
 body {
-    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(../img/bgCircuit.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url(../img/bgCircuit.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;/*Optional*/
+    background-repeat: no-repeat;
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -38,29 +39,34 @@ button {
 }
 
 
-/*###### navigation-bar ######*/
-#navigation-bar {
-    width: 100%;
-    height: 9vh;
-    background-color: rgba(0,0,0);
+/*###### navigation-bar 2######*/
+.container {
     position: fixed;
     top: 0;
-    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: rgba(0,0,0);
     z-index: 1;
+    box-shadow: 0 2px 6px rgba(37, 177, 182, 0.2);
 }
 
 #AI-logo {
-    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0 auto;
 }
 @keyframes AI {
     0% { transform: perspective(900px) rotateY(0deg); }
     100% { transform: perspective(900px) rotateY(360deg); }
 }
 .AI-Logo-1 {
-    width: 4%;
+    width: 0 auto;
     font-size: 10px;
     margin-left: 15%;
-    margin-top: 3vh;
     color: white;
     animation-name: AI;
     animation-duration: 10s;
@@ -68,30 +74,26 @@ button {
     animation: AI 5s linear infinite;
 }
 
-#nav-box {
-    width: 80%;
-}
-nav {
-    margin-left: 33%;
-    display: flex;
-    text-align: center;
-    width: 100%;
-}
 nav ul {
-    position: fixed;
-    top: 0;
-    margin-top: 6%;
+    display: flex;
     list-style-type: none;
-}
-nav li {
-    display: inline;
     margin-left: 5px;
 }
-nav a {
+nav ul li {
+    margin-left: 4px;
+}
+nav ul li a {
     text-decoration: none;
     color: yellow;
     font-size: larger;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
 }
+nav ul li:hover {
+    background-color: rgba(82, 78, 78, 0.5);
+    border-radius: 5px;
+}
+
 #color-nav-link {
     color: aqua;
 }
@@ -99,7 +101,7 @@ nav a {
 
 /*###### main-container ######*/
 #text-box-top {
-    margin: 20% 1% 1% 1%;
+    margin: 16% 1% 1% 1%;
     border-radius: 8px;
 }
 #btn-bx {
@@ -138,7 +140,7 @@ nav a {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 90vh;
+    height: 92vh;
     margin: 0;
     color: white;
     font-size: x-large;
@@ -153,7 +155,7 @@ nav a {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 90vh;
+    height: 92vh;
     margin: 0;
     color: white;
     font-size: x-large;
@@ -171,7 +173,7 @@ nav a {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 90vh;
+    height: 92vh;
     margin: 0;
     color: white;
     font-size: x-large;
@@ -186,7 +188,7 @@ nav a {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    height: 90vh;
+    height: 92vh;
     margin: 0;
     color: white;
     font-size: x-large;
@@ -359,9 +361,14 @@ h3 {
 /* footer */
 footer {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+}
+footer div {
     margin: 1%;
-    padding: 20vh 0;
     color: white;
     font-size: smaller;
-    justify-content: center;
+    line-height: 2;
+    word-spacing: normal;
 }
